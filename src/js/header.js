@@ -19,7 +19,7 @@ header.innerHTML = `
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Consultar</a>
+                <a class="nav-link" id='consultar' href="#">Consultar</a>
             </li>
 
             <li class="nav-item">
