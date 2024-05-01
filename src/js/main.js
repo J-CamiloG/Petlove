@@ -7,7 +7,7 @@ const dataBase = [
         especie:'gato ',
         peso:'33kg',
         estado:true,
-        url:'https://img.freepik.com/foto-gratis/vista-superior-dueno-acariciando-perro_23-2149872902.jpg?t=st=1714591690~exp=1714595290~hmac=c7e78956dcf48db831ab773ed7461c8b80199bbeba538e39fc2943b2a17b0e04&w=826',
+        url:'https://img.freepik.com/foto-gratis/adorable-perro-basenji-marron-blanco-sonriendo-dando-maximo-cinco-aislado-blanco_346278-1657.jpg?t=st=1714602025~exp=1714605625~hmac=c4875f21d054ed365f6e9ba57aed74fad925f37ee8cdf2fae414e244c4fba8cc&w=1800',
         datosPropietario :{
             nombre: 'camilo',
             documento: '123453453',
@@ -16,13 +16,103 @@ const dataBase = [
         }
     },
     {
-        nombre:'paco',
+        nombre:'pacoooooo',
         edad:'4',
         raza:'criollo',
         especie:'gato ',
         peso:'33kg',
         estado:true,
-        url:'https://img.freepik.com/foto-gratis/vista-superior-dueno-acariciando-perro_23-2149872902.jpg?t=st=1714591690~exp=1714595290~hmac=c7e78956dcf48db831ab773ed7461c8b80199bbeba538e39fc2943b2a17b0e04&w=826',
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
+        datosPropietario :{
+            nombre: 'camilo',
+            documento: '123453453',
+            telefono:'324423453',
+            correo:'codeartjc@gamil.com'
+        }
+    },
+    {
+        nombre:'pacoooooo',
+        edad:'4',
+        raza:'criollo',
+        especie:'gato ',
+        peso:'33kg',
+        estado:true,
+        url:'https://img.freepik.com/foto-gratis/primer-disparo-lindo-gato-blanco-negro-acostado_181624-44821.jpg?t=st=1714598433~exp=1714602033~hmac=77e79a3f0ee41cdaf9b69d95c8e76e72d9ddec27064a39de9323c8b7b02338b9&w=1800',
         datosPropietario :{
             nombre: 'camilo',
             documento: '123453453',
@@ -166,29 +256,37 @@ const btnConsultar = document.getElementById('consultar');
 const sectionCard = document.createElement('section')
 // le agregamos un id a la eqiqueta que acabamos de crear
 sectionCard.id ='container-cards'
+sectionCard.classList.add('d-flex', 'gap-5','personalizada')
 // agregamos a section al main para que esa section sea el padre de cada carta
 main.appendChild(sectionCard)
+
+
 
 //iteramos la data base para saber cuntas carta debe crear el programa para mostrar los datos
 for (let index = 0; index < dataBase.length; index++) {
     // le agregamos el =+ para que no se sobre escriba la carta en cada vuelta
-    console.log('estoy por entrar');
-    sectionCard.innerHTML += `
+    let nombreMascota = dataBase[index]['nombre'];
+    let urlMascota = dataBase[index]['url'];
+    let edadMascota = dataBase[index]['edad'];
+    let razaMascota = dataBase[index]['raza'];
+    let especieMascota = dataBase[index]['especie'];
+    let pesoMascota = dataBase[index]['peso'];
+    let estadoMascota = dataBase[index]['estado'];
+
+
+        sectionCard.innerHTML += `
         <div class="card" style="width: 18rem;">
-            <img src='${index.url}' class="card-img-top" alt="...">
+            <img src='${urlMascota}' class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Nombre: ${nombreMascota}</h5>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item fw-bold">Estado: <span class="text-primary"> ${estadoMascota} </span> </li>
+                <li class="list-group-item fw-bold">Peso: ${pesoMascota}</li>
+                <li class="list-group-item fw-bold"> Especie: ${especieMascota}</li>
+                <li class="list-group-item fw-bold"> Raza: ${razaMascota}</li>
+                <li class="list-group-item fw-bold"> Edad: ${edadMascota}</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
         </div>
     `
 }
