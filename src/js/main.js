@@ -327,7 +327,7 @@ btnConsultar.addEventListener('click', ()=>{
     sectionCard.classList.toggle('d-none')
 })
 
-//función actualizar 
+//------------------------------------------------------------------------------función actualizar-------------- 
 
 function actualizar() {
     // creamos una sección dentro del main
@@ -346,38 +346,35 @@ function actualizar() {
         btnSearch.addEventListener("click", (e) => {
             e.preventDefault();
             let search = document.querySelector("#search").value
-            buscarParametro(search)
+            buscarParametro(search,sectionModificar)
         })
 }
 
-function buscarParametro(search) {
+function buscarParametro(search,sectionModificar) {
     const mascotaEncontrada = dataBase.find(mascota => mascota.nombre === search)
-        // if (mascotaEncontrada) {
-        //     let cardMacotaEncotrada = document.createElement("div")
-        //     cardMacotaEncotrada.innerHTML = `
-                
-        //     `
-        // }
+        if (mascotaEncontrada) {
+            let cardMacotaEncotrada = document.createElement("section")
+
+            cardMacotaEncotrada.innerHTML = `
+                <div class="card" style="width: 18rem;">
+                    <img src=' class="card-img-top" alt="..." style="object-fit: cover; width: 100%; height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre: <span class="text-danger">  </span></h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold">Estado: <span class="text-primary"> </span> </li>
+                        <li class="list-group-item fw-bold">Peso: </li>
+                        <li class="list-group-item fw-bold"> Especie:</li>
+                        <li class="list-group-item fw-bold"> Raza: </li>
+                        <li class="list-group-item fw-bold"> Edad: </li>
+                    </ul>
+                </div>
+            `
+            sectionModificar.appendChild(cardMacotaEncotrada)
+        }
 }
 
 
 
 actualizar()
 console.log(search.value);
-// console.log(dataBase);
-
-// <ul>
-
-// <li>Nombre </li>
-// <li>Url </li>
-// <li>Edad </li>
-// <li>Raza </li>
-// <li>Especie </li>
-// <li>Peso </li>
-// <li>Estado</li>
-// <li>Nombre propietario </li>
-// <li>Documento propietario </li>
-// <li>Documento Propietario </li>
-// <li>Correo propietario </li>
-// <li> </li>
-// </ul>
