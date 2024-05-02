@@ -329,9 +329,9 @@ btnConsultar.addEventListener('click', ()=>{
 
 //------------------------------------------------------------------------------función actualizar-------------- 
 
-function actualizar() {
     // creamos una sección dentro del main
     let sectionModificar = document.createElement("section")
+    sectionModificar.id = "section-actualizar"
     main.appendChild(sectionModificar)
     // agregamos la barra de busqueda
     sectionModificar.innerHTML= `
@@ -346,35 +346,51 @@ function actualizar() {
         btnSearch.addEventListener("click", (e) => {
             e.preventDefault();
             let search = document.querySelector("#search").value
-            buscarParametro(search,sectionModificar)
+           
+            buscarMascota(search)
         })
-}
 
-function buscarParametro(search,sectionModificar) {
-    const mascotaEncontrada = dataBase.find(mascota => mascota.nombre === search)
-        if (mascotaEncontrada) {
-            let cardMacotaEncotrada = document.createElement("section")
+    //dentro de sección modificar creamos un contenedor para las cards
+    let containerCards = document.createElement ("article")
+        containerCards.id = "containerCards"
+        sectionModificar.appendChild(containerCards)
 
-            cardMacotaEncotrada.innerHTML = `
-                <div class="card" style="width: 18rem;">
-                    <img src=' class="card-img-top" alt="..." style="object-fit: cover; width: 100%; height: 250px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre: <span class="text-danger">  </span></h5>
+        function buscarMascota(search) {
+            const mascotaEncontrada = dataBase.find(mascota => mascota.nombre === search)
+            
+            if (mascotaEncontrada) {
+                let card = document.createElement("div")
+                card.id ="containerCard"
+
+                card.innerHTML = `
+                    <div class="card" style="width: 18rem;">
+                        <img src='${mascotaEncontrada.url}' class="card-img-top" alt="..." style="object-fit: cover; width: 100%; height: 250px;">
+                        <div class="card-body">
+                        <h5 class="card-title">Nombre: <span class="text-danger"> ${mascotaEncontrada.nombre} </span></h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item fw-bold">Estado: <span class="text-primary"> ${mascotaEncontrada.estado} </span> </li>
+                            <li class="list-group-item fw-bold">Peso: ${mascotaEncontrada.peso}</li>
+                            <li class="list-group-item fw-bold"> Especie: ${mascotaEncontrada.especie}</li>
+                            <li class="list-group-item fw-bold"> Raza: ${mascotaEncontrada.raza}</li>
+                            <li class="list-group-item fw-bold"> Edad: ${mascotaEncontrada.edad}</li>
+                            <li class="list-group-item fw-bold"> Nommbre propietario: ${mascotaEncontrada.datosPropietario.nombre}</li>
+                            <li class="list-group-item fw-bold"> Documento: ${mascotaEncontrada.datosPropietario.documento}</li>
+                            <li class="list-group-item fw-bold"> Teléfono: ${mascotaEncontrada.datosPropietario.telefono}</li>
+                            <li class="list-group-item fw-bold"> Correo: ${mascotaEncontrada.datosPropietario.correo}</li>
+                        </ul>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">Estado: <span class="text-primary"> </span> </li>
-                        <li class="list-group-item fw-bold">Peso: </li>
-                        <li class="list-group-item fw-bold"> Especie:</li>
-                        <li class="list-group-item fw-bold"> Raza: </li>
-                        <li class="list-group-item fw-bold"> Edad: </li>
-                    </ul>
-                </div>
-            `
-            sectionModificar.appendChild(cardMacotaEncotrada)
+                    
+                `
+                containerCards.appendChild(card)
+            }
+
+           
+
+            else{
+               alert("MASCOTA NO ENCONTRADA")
+            }
         }
-}
+        
+        buscarMascota(search)
 
-
-
-actualizar()
-console.log(search.value);
