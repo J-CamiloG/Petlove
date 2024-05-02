@@ -1,14 +1,1 @@
 @import url(./reset.css);
-.personalizada{
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 2rem 1rem;
-}
-body{
-    background-color: black;
-}
