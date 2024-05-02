@@ -16,8 +16,8 @@ const dataBase = [
         }
     },
     {
-        nombre:'pacoooooo',
-        edad:'4',
+        nombre:'paco',
+        edad:'5',
         raza:'criollo',
         especie:'gato ',
         peso:'33kg',
@@ -31,7 +31,7 @@ const dataBase = [
         }
     },
     {
-        nombre:'pacoooooo',
+        nombre:'paco3',
         edad:'4',
         raza:'criollo',
         especie:'gato ',
@@ -46,7 +46,7 @@ const dataBase = [
         }
     },
     {
-        nombre:'pacoooooo',
+        nombre:'paco4',
         edad:'4',
         raza:'criollo',
         especie:'gato ',
@@ -61,7 +61,7 @@ const dataBase = [
         }
     },
     {
-        nombre:'pacoooooo',
+        nombre:'paco5',
         edad:'4',
         raza:'criollo',
         especie:'gato ',
@@ -76,7 +76,7 @@ const dataBase = [
         }
     },
     {
-        nombre:'pacoooooo',
+        nombre:'paco6',
         edad:'4',
         raza:'criollo',
         especie:'gato ',
@@ -159,6 +159,7 @@ function toggleConsulta() {
 
             const sectionRegistrar = document.getElementById('container-registrar');
             sectionRegistrar.innerHTML = `
+            <p>Formulario registro usuario </p>
                 <form >
                     <div class="form-row">
                     <div class="col-md-4 mb-3">
@@ -219,6 +220,7 @@ function toggleConsulta() {
     
 }
 
+
 //creamos la funcion para envair los datos del form y limpiar los inputs
 function enviarDatos() {
     //creamor las variables para almacenar los datos del form
@@ -233,7 +235,6 @@ function enviarDatos() {
     let documentoPropietario = document.getElementById('documetno-propietario');
     let telefonoPropietario = document.getElementById('telefono');
     let correoPropietario = document.getElementById('correo');
-
     // funcion para enviar el form
     let nuevoUsuario = {
         nombre:nombreMascota.value,
@@ -273,7 +274,6 @@ btnRegistrar.addEventListener('click', toggleConsulta);// escuchamos el evento y
 
 
 console.log(dataBase);
-
 
 //------------------------------------------------------------section para consultar ------------
 
@@ -327,5 +327,57 @@ btnConsultar.addEventListener('click', ()=>{
     sectionCard.classList.toggle('d-none')
 })
 
+//función actualizar 
 
-console.log(dataBase);
+function actualizar() {
+    // creamos una sección dentro del main
+    let sectionModificar = document.createElement("section")
+    main.appendChild(sectionModificar)
+    // agregamos la barra de busqueda
+    sectionModificar.innerHTML= `
+        <form class="d-flex" role="search" >
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit" id="btn-search">Search</button>
+        </form>`
+        // buscamos al botón de buscar
+        let btnSearch = document.getElementById("btn-search");
+
+        // por medio del click extraemos el valor del input
+        btnSearch.addEventListener("click", (e) => {
+            e.preventDefault();
+            let search = document.querySelector("#search").value
+            buscarParametro(search)
+        })
+}
+
+function buscarParametro(search) {
+    const mascotaEncontrada = dataBase.find(mascota => mascota.nombre === search)
+        // if (mascotaEncontrada) {
+        //     let cardMacotaEncotrada = document.createElement("div")
+        //     cardMacotaEncotrada.innerHTML = `
+                
+        //     `
+        // }
+}
+
+
+
+actualizar()
+console.log(search.value);
+// console.log(dataBase);
+
+// <ul>
+
+// <li>Nombre </li>
+// <li>Url </li>
+// <li>Edad </li>
+// <li>Raza </li>
+// <li>Especie </li>
+// <li>Peso </li>
+// <li>Estado</li>
+// <li>Nombre propietario </li>
+// <li>Documento propietario </li>
+// <li>Documento Propietario </li>
+// <li>Correo propietario </li>
+// <li> </li>
+// </ul>
